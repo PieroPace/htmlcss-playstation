@@ -1,0 +1,195 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+.my_container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.rounded-6 {
+    border-radius: 0.6rem!important;
+}
+
+header.sticky-top {
+    top: -1px;
+}
+
+.header-top svg {
+    width: 4em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.my_nav-bar-list-inline .list-inline li::before {
+    content: '\2022 ';
+    margin-right: 0.5em;
+}
+
+.my_nav-bar-list-inline .list-inline li a {
+    text-decoration: none;
+    color: black;
+}
+
+.my_nav-bar-list-inline .list-inline li:hover a {
+    color: blue;
+}
+
+.dropdown-menu {
+    border: 0;
+    border-radius: 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: calc(100% - 2px);
+    left: 0;
+}
+
+.dropdown-toggle::after {
+    vertical-align: middle;
+    border: 0;
+    content: '';
+    height: 15px;
+    width: 15px;
+    background: url(../img/chevron-down-solid.svg) no-repeat;
+}
+
+.dropdown-toggle:hover:after {
+    background: url(../img/chevron-down-solid-hover.svg) no-repeat;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: blue;
+}
+
+.navbar .dropdown-menu .my_image_navbar:hover {
+    border-radius: 1px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-toggle.show::after {
+    background: url(../img/chevron-down-solid.svg) no-repeat;
+    transform: rotate(180deg);
+}
+
+.dropdown-toggle.show:hover:after {
+    background: url(../img/chevron-down-solid-hover.svg) no-repeat;
+    transform: rotate(180deg);
+}
+
+.jumbo-top.container-fluid {
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.jumbo-top .content {
+    padding-top: 60%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.jumbo-bot .img_container.active {
+    border: 1px solid blue;
+    border-radius: 0.6rem;
+    padding: 0.2em;
+}
+
+.jumbo-bot .img_container:hover {
+    transform: translate(0, -20%);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px black;
+    filter: opacity(0.8);
+}
+
+.discover .img_container img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.discover .img_container img:hover {
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 768px) {
+    .discover .img_container img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse .btn {
+        width: 400px;
+    }
+    
+    .navbar-collapse .search-button {
+        width: 100%;
+        border: 1px solid black;
+        margin: 1em 0;
+        padding: 0.5em;
+    }
+
+    .navbar-collapse .search-button input {
+        width: 50%;
+        border: 0;
+    }
+}
+
+.discover .img_container.active {
+    border-bottom: 2px solid blue;
+}
+
+.banner-ad.container-fluid {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.new-game {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.banner-ad-plus {
+    background-color: #BEBCBB;
+}
+
+.banner-ad-now {
+    background-color: #161C3B;
+    color: white;
+}
+
+footer {
+    background-color: #00439C;
+    color: white;
+}
+
+footer .logo_ps,
+footer .logo_sie {
+    width: 100px;
+    margin-bottom: 2em;
+}
+
+footer .list-unstyled {
+    line-height: 2.5em;
+}
+
+footer .list-unstyled a {
+    text-decoration: none;
+    color: white;
+}
